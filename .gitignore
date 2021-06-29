@@ -1,9 +1,5 @@
 less/
-eliteadmin-colors/
-plugins/
 upload/
-log/
-reports/
 venv/
 .DS_Store
 .env
