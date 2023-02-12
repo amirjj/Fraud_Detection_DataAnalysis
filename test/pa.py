@@ -6,8 +6,6 @@ from flask import flash, url_for, g
 
 
 app = Flask(__name__)
-# app.config['LDAP_BASE_DN'] = 'DC=mtnirancell,DC=ir'
-# app.config['LDAP_USERNAME'] = 'CN=amir,CN=jams,DC=mtnirancell,DC=ir'
 
 ldap = LDAP(app)
 
