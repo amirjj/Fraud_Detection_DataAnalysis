@@ -6,17 +6,11 @@ config = dict()
 # All configuration directives can be found in the documentation.
 
 # Hostname of your LDAP Server
-config['LDAP_HOST'] = '10.132.57.208'
+config['LDAP_HOST'] = ''
 
 # Base DN of your directory
 # config['LDAP_BASE_DN'] = 'dc=mydomain,dc=com'
-config['LDAP_BASE_DN'] = 'dc=mtnirancell,dc=ir'
-
-# Users DN to be prepended to the Base DN
-# config['LDAP_USER_DN'] = 'ou=amir.jams'
-
-# Groups DN to be prepended to the Base DN
-# config['LDAP_GROUP_DN'] = 'ou=groups'
+config['LDAP_BASE_DN'] = ''
 
 
 # The RDN attribute for your user schema on LDAP
@@ -36,7 +30,3 @@ ldap_manager = LDAP3LoginManager()
 
 # Init the mamager with the config since we aren't using an app
 ldap_manager.init_config(config)
-
-# Check if the credentials are correct
-# response = ldap_manager.authenticate('amir.jams', '')
-# print(response.status)
