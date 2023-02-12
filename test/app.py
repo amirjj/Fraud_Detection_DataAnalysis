@@ -6,17 +6,6 @@ app = Flask(__name__)
 app.secret_key = 'dev key'
 app.debug = True
 
-# app.config['LDAP_HOST'] = '10.132.57.208'
-# app.config['LDAP_BASE_DN'] = 'OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
-# app.config['LDAP_BASE_DN'] = 'OU=Users,OU=MTN Irancell Accounts,DC=10.132.57.208'
-# app.config['LDAP_USERNAME'] = 'CN=amir.jams,OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
-# app.config['LDAP_CUSTOM_OPTIONS'] = {l.OPT_REFERRALS: 0}
-# app.config['LDAP_USE_SSL'] = True
-
-
-# app.config['LDAP_HOST'] = '10.132.57.208'
-# app.config['LDAP_BASE_DN'] = 'DC=mtnirancell,DC=ir'
-# app.config['LDAP_USERNAME'] = 'CN=amir,CN=jams,DC=mtnirancell,DC=ir'
 app.config['LDAP_CUSTOM_OPTIONS'] = {l.OPT_REFERRALS: 0}
 app.config['LDAP_USE_SSL'] = True
 
