@@ -37,13 +37,13 @@ def gen_seccess(success_desc):
 def send_email(sender, recipients, subject, body, attachment=None):
     # TODO fix attachments
     msg = Message(subject,
-                  sender=u'ایرانسل <noreply@irancell.ir>',
+                  sender=u'',
                   recipients=recipients)
 
     # msg.body = body
     msg.html = body
 
-    f = open(os.path.join(current_app.root_path, 'static/img/content/irancell_logo.jpg'), 'rb')
+    f = open(os.path.join(current_app.root_path, 'static/img/content/logo.jpg'), 'rb')
     msg.attach('irancell_logo.jpg', 'image/jpg', f.read(),
                headers=[('Content-ID', '<irancell_logo.jpg>')]
                )
