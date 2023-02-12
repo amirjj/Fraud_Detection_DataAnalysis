@@ -86,12 +86,6 @@ def configure_sentry(app):
 
 
 def lmcreate(app):
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
-    # app.config['WTF_CSRF_SECRET_KEY'] = 'random key for form'
-    # app.config['LDAP_PROVIDER_URL'] = 'ldap://ldap.testathon.net:389/'
-    # app.config['LDAP_PROTOCOL_VERSION'] = 3
-    # app.config['LDAP_BASE_DN'] = 'OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
-    # app.config['LDAP_USERNAME'] = 'CN=amir.jams,OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
 
     db = SQLAlchemy(app)
 
@@ -99,7 +93,6 @@ def lmcreate(app):
 
 
     login_manager.init_app(app)
-    # login_manager.login_view = 'base.web.login'
     login_manager.login_view = 'base.web.login'
 
     # db.create_all()
