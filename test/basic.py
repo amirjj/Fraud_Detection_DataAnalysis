@@ -4,11 +4,6 @@ from flask_simpleldap import LDAP
 app = Flask(__name__)
 app.secret_key = 'dev key'
 app.debug = True
-
-# app.config['LDAP_HOST'] = '10.132.57.208'
-# app.config['LDAP_BASE_DN'] = 'OU=Business Risk Management,OU=Tehran,OU=Staff,OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
-# app.config['LDAP_USERNAME'] = 'CN=Amir Jamshidi Jam - 02704,OU=Business Risk Management,OU=Tehran,OU=Staff,OU=Users,OU=MTN Irancell Accounts,DC=mtnirancell,DC=ir'
-
 ldap = LDAP(app)
 
 @app.route('/')
